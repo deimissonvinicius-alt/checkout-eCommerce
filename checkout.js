@@ -15,6 +15,8 @@ function aplicarCupom(subtotal, codigo){
         desconto = 1
     }
 }
+//.
+
 function finalizarCompra(item,codigoCupom){
     if(desconto === -15){
         subtotal - 15
