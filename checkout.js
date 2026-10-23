@@ -1,5 +1,10 @@
 function calcularSubtotal (itens) {
+   let total = 0;
+   for (let item of itens) {
+    total += (item * preço) * (item * quantidade)
+   }
    
+   return total
 }
 function contarItens(itens) {
  let totalItens = 0;
