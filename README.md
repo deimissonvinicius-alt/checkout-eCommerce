@@ -37,9 +37,12 @@ Cada desenvolvedor cria sua feature/* a partir da develop e trabalha apenas nela
 As feature/* são mescladas (merge) na develop. Se houver conflito, ele é resolvido manualmente, preservando a lógica das duas branches.
 Com a develop testada, ela é integrada à main.
 
-Com o Git:
 Isolamento: cada desenvolvedor trabalha na sua própria branch, então um não sobrescreve o código do outro enquanto desenvolve.
+
 Detecção de conflitos: ao juntar as branches na develop, o Git avisa quando as duas alteraram as mesmas linhas e exige resolução manual, mantendo a lógica de ambas, em vez de perder código silenciosamente.
+
 Histórico rastreável: cada commit registra quem mudou o quê, quando e por quê. Com git log e git diff seria possível achar o ponto exato em que o algoritmo do carrinho foi corrompido.
+
 Reversão rápida: com git revert (ou voltando ao último commit estável), o sistema voltaria a funcionar em minutos, sem precisar reescrever o código do zero nem interromper a aplicação por muito tempo.
+
 Proteção da produção: como a main só recebe código já integrado e testado na develop, uma alteração com defeito não chega direto ao ambiente de pagamentos.
